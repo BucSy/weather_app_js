@@ -1,0 +1,16 @@
+body {
+  background: #4abdac;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#weatherappspot {
+  width: 600px;
+  margin: 20px auto;
+}
+#belsoapp {
+  margin:auto;
+  padding: 100px;
+}
