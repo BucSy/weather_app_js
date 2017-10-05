@@ -25,17 +25,18 @@ h2 {
 i {
   font-size: 25px;
   color: #EB540A;
+  padding-right: 10px;
 }
 #left {
-  padding-left: 50px;
+  padding-left: 20px;
   width: 200px;
 }
 #right {
-  padding-left: 50px;
+  padding-left: 20px;
   width: 200px;
   height: 100px;
 }
 #buttons {
-  padding-top: 30px;
   margin: auto;
+  text-align: center;
 }

@@ -1,5 +1,7 @@
 var city = "";
 $(document).ready(function() {
+  $('#left').hide(0);
+  $('#right').hide(0);
   $.getJSON('http://ip-api.com/json', function(data) {
     city = data.city;
     $("#city").text(data.city);
@@ -18,6 +20,8 @@ $(document).ready(function() {
         console.log(winddeg);
         windDegreeCalc();
         windSpeedCalc();
+        $('#left').show(1000);
+        $('#right').show(1000);
       });
       function windDegreeCalc() {
           console.log(winddeg);
