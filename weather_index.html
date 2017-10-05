@@ -5,14 +5,23 @@
 <link rel="stylesheet" type="text/css" href="weather-icons-wind.min.css">
 <link rel="stylesheet" type="text/css" href="weather_style.css">
 <body>
+  <div id="line"></div>
 <div id="weatherappspot">
-<div id="belsoapp">
+<div id="belsoapp" class="row">
 <h2 id="city"></h2>
-C:<span id="temp"></span><br>
-<span id="windSpeedSpan"></span>Wind Speed:<span id="windSpeed"></span><br>
-<span id="windDegreeSpan"></span>Wind Degree:<span id="windDegree"></span><br>
-Clouds: <span id="clouds"></span><br>
-<span><button id="submit" class="btn btn-warning btn-default">Submit</button></span>
+<div id="left">
+ C : <span id="temp"></span><br>
+<span id="windSpeedSpan"></span> Wind Speed : <span id="windSpeed"></span><br>
+<span id="windDegreeSpan"></span> Wind Degree : <span id="windDegree"></span><br>
+ Clouds : <span id="clouds"></span><br>
+ </div>
+ <div id="right">
+   sad :
+ </div>
+<br>
+<div id="buttons">
+<button id="submit" class="btn btn-warning btn-default btn-sm"><span class="glyphicon glyphicon-send"></span> Submit</button>
+</div>
 </div>
 </div>
 </body>

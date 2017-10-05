@@ -1,19 +1,41 @@
 body {
-  background: #4abdac;
-  width: 90%;
+  background: #0C152A;
+  color: #4E9CB5;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
 }
+#line {
+  background: #EB540A;
+  height: 3px;
+}
 #weatherappspot {
   width: 600px;
   margin: 20px auto;
+}
+h2 {
+  padding-left: 100px;
+  padding-bottom: 40px;
 }
 #belsoapp {
   margin:auto;
   padding: 100px;
 }
 i {
-  color: orange;
+  font-size: 25px;
+  color: #EB540A;
+}
+#left {
+  padding-left: 50px;
+  width: 200px;
+}
+#right {
+  padding-left: 50px;
+  width: 200px;
+  height: 100px;
+}
+#buttons {
+  padding-top: 30px;
+  margin: auto;
 }
