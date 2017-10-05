@@ -9,6 +9,8 @@ $(document).ready(function() {
   });
   $("#submit").on("click", function(e) {
     e.preventDefault();
+    $("#submit").addClass('btn-primary');
+    $("#submit1").removeClass('btn-primary');
       $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=' + city +
       '&units=metric&appid=a635e0cd7234dedd518a542b488c65cd', function dataRequest(adat) {
         $("#temp").text(adat.main.temp);
@@ -20,8 +22,8 @@ $(document).ready(function() {
         console.log(winddeg);
         windDegreeCalc();
         windSpeedCalc();
-        $('#left').show(1000);
-        $('#right').show(1000);
+        $('#left').show(200);
+        $('#right').show(200);
       });
       function windDegreeCalc() {
           console.log(winddeg);
@@ -91,5 +93,10 @@ $(document).ready(function() {
           $('#windSpeedSpan').html('<i class="wi wi-wind-beaufort-12"></i>');
         }
       };
+    });
+    $("#submit1").on("click", function() {
+      console.log("btnsubmit1 clicked");
+      $("#submit1").addClass('btn-primary');
+      $("#submit").removeClass('btn-primary');
     });
 });

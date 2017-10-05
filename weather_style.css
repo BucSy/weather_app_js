@@ -15,7 +15,7 @@ body {
   margin: 20px auto;
 }
 h2 {
-  padding-left: 100px;
+  padding-left: 110px;
   padding-bottom: 40px;
 }
 #belsoapp {
@@ -36,7 +36,16 @@ i {
   width: 200px;
   height: 100px;
 }
-#buttons {
-  margin: auto;
+.btn-group {
+  display: flex;
+  justify-content: center;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  height: 30px;
+  font-size: 12px;
+  width: 100%;
   text-align: center;
+  color: #EB540A;
 }
