@@ -1,3 +1,4 @@
+<meta charset="UTF-8"> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="weather_js.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -10,13 +11,52 @@
 <div id="belsoapp" class="row">
 <h2 id="city"></h2>
 <div id="left">
-<span><i class="wi wi-thermometer"></i></span> Temperature : <span id="temp"></span><br>
-<span id="windSpeedSpan"></span> Wind Speed : <span id="windSpeed"></span><br>
-<span id="windDegreeSpan"></span> Wind Degree : <span id="windDegree"></span><br>
-<span><i class="wi wi-day-cloudy"></i></span> Clouds : <span id="clouds"></span><br>
+<table>
+  <tr>
+    <td align="center" class="icons"><span><i class="wi wi-thermometer"></i></span></td>
+    <td> Temperature : </td>
+    <td><span id="temp"></span></td>
+  </tr>
+  <tr>
+    <td align="center" class="icons"><span id="windSpeedSpan"></span></td>
+    <td> Wind Speed : </td>
+    <td><span id="windSpeed"></span></td>
+  </tr>
+  <tr>
+    <td class="paddingfrombottom icons" align="center"><span id="windDegreeSpan"></span></td>
+    <td> Wind Degree : </td>
+    <td><span id="windDegree"></span></td>
+  </tr>
+  <tr>
+    <td class="icons" align="center"><span><i class="wi wi-cloud"></i></span></td>
+    <td> Clouds : </td>
+    <td><span id="clouds"></span></td>
+  </tr>
+</table>
  </div>
  <div id="right">
-   sad :
+   <table>
+     <tr>
+       <td align="right" class="icons"><span><i class="wi wi-day-cloudy"></i></span></td>
+       <td> Weather : </td>
+       <td><span id="weatherone"></span></td>
+     </tr>
+     <tr>
+       <td align="center" class="icons"><span><i class="wi wi-thermometer-exterior"></i></span></td>
+       <td> Min Temp : </td>
+       <td><span id="tempmin"></span></td>
+     </tr>
+     <tr>
+       <td class="paddingfrombottom icons" align="center"><span><i class="wi wi-fire"></i></span></td>
+       <td> Max Temp : </td>
+       <td><span id="tempmax"></span></td>
+     </tr>
+     <tr>
+       <td class="icons" align="center"><span><i class="wi wi-humidity"></i></span></td>
+       <td> Humidity : </td>
+       <td><span id="humi"></span></td>
+     </tr>
+   </table>
  </div>
 <br>
 </div>

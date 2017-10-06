@@ -13,10 +13,14 @@ $(document).ready(function() {
     $("#submit1").removeClass('btn-primary');
       $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=' + city +
       '&units=metric&appid=a635e0cd7234dedd518a542b488c65cd', function dataRequest(adat) {
-        $("#temp").text(adat.main.temp);
-        $("#windSpeed").text(adat.wind.speed);
+        $("#temp").text(adat.main.temp + " ℃");
+        $("#windSpeed").text(adat.wind.speed + " m/s");
         $("#windDegree").text(adat.wind.deg);
         $("#clouds").text(adat.clouds.all + " %");
+        $("#weatherone").text(adat.weather.main);
+        $("#tempmin").text(adat.main.temp_min + " ℃");
+        $("#tempmax").text(adat.main.temp_max + " ℃");
+        $("#humi").text(adat.main.humidity + " %");
         window.winddeg = adat.wind.deg;
         window.windspeed = adat.wind.speed;
         console.log(winddeg);

@@ -15,12 +15,13 @@ body {
   margin: 20px auto;
 }
 h2 {
-  padding-left: 110px;
+  width: 100%;
+  text-align: center;
   padding-bottom: 40px;
 }
 #belsoapp {
   margin:auto;
-  padding: 100px;
+  padding: 100px 75px 100px 75px;
 }
 i {
   font-size: 25px;
@@ -28,13 +29,10 @@ i {
   padding-right: 10px;
 }
 #left {
-  padding-left: 20px;
-  width: 200px;
+  width: 225px;
 }
 #right {
-  padding-left: 20px;
-  width: 200px;
-  height: 100px;
+  width: 225px;
 }
 .btn-group {
   display: flex;
@@ -48,4 +46,11 @@ i {
   width: 100%;
   text-align: center;
   color: #EB540A;
+}
+.paddingfrombottom {
+  padding-bottom: 9px;
+  padding-top: 0;
+}
+.icons {
+    width: 50px;
 }
